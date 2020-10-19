@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { COLORS, FONT_SIZES, BREAKPOINTS } from '../constants';
 import Layout from '../components/Layout';
 import Calculator from '../components/Calculator';
+import PageHead from '../components/PageHead';
 
 const Container = styled.div`
   height: 100%;
@@ -34,6 +35,7 @@ const Text = styled.div`
 const Home = () => {
   return (
     <Layout>
+      <PageHead />
       <Container>
         <Text>Simple Calculator in React</Text>
         <Calculator />
